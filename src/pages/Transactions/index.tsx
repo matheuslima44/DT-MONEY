@@ -1,13 +1,13 @@
 import { Header } from "../../components/Header";
 import { Summary } from "../../components/Summary";
 import { TransactionsContext } from "../../context/TransactionsContext";
-import { Searchform } from "./Searchform";
 import { useContext } from "react";
 import {
   PriceHighLight,
   TransactionsContainer,
   TransactionsTable,
 } from "./styles";
+import { Searchform } from "./components/Searchform";
 import { dateFormatter, priceFormatter } from "../../utils/formatter";
 
 export function Transactions() {
