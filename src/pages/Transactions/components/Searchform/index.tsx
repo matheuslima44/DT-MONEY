@@ -5,7 +5,6 @@ import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { TransactionsContext } from "../../../../context/TransactionsContext";
 import { useContextSelector } from "use-context-selector";
-import { memo } from "react";
 
 // Porque um Componente Renderiza?
 
@@ -16,7 +15,7 @@ import { memo } from "react";
 
 //O que pe o memo:
 //0.1: comparar a versao antiga dos hooks e props
-//0.2: Se mudou algo, ele vai permitir a nova Renderização
+//0.2: Se mudou algo, ele vai permitir a nova Renderiza
 
 const searchformScrema = z.object({
   query: z.string(),
